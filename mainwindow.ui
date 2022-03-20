@@ -1,0 +1,3250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1166</width>
+    <height>918</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BESCORE</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,0,0,0">
+      <item>
+       <widget class="QLabel" name="label_ip">
+        <property name="text">
+         <string>IP：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_ip">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_port">
+        <property name="text">
+         <string>端口：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_port">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_connect">
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>连接</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_Chg">
+       <attribute name="title">
+        <string>PvInv</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QGroupBox" name="groupBox_pvinv_80">
+          <property name="title">
+           <string>PvInvStatus</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_12">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_pvinv_80_00">
+             <property name="text">
+              <string>Inv_InvState</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_pvinv_80_00">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLabel" name="label_pvinv_80_01">
+             <property name="text">
+              <string>Inv_InvMode</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QLineEdit" name="lineEdit_pvinv_80_01">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5">
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="6">
+            <widget class="QLabel" name="label_pvinv_80_02">
+             <property name="text">
+              <string>Inv_InvModeRequest</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="7">
+            <widget class="QLineEdit" name="lineEdit_pvinv_80_02">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="8">
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="9">
+            <widget class="QLabel" name="label_pvinv_80_03">
+             <property name="text">
+              <string>Grid_GridState</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="10">
+            <widget class="QLineEdit" name="lineEdit_pvinv_80_03">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="11">
+            <spacer name="horizontalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="12">
+            <widget class="QLabel" name="label_pvinv_80_04">
+             <property name="text">
+              <string>Pv_PV1State</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="13">
+            <widget class="QLineEdit" name="lineEdit_pvinv_80_04">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="14">
+            <spacer name="horizontalSpacer_15">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="15">
+            <widget class="QLabel" name="label_pvinv_80_05">
+             <property name="text">
+              <string>Pv_PV2State</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="16">
+            <widget class="QLineEdit" name="lineEdit_pvinv_80_05">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_pvinv_81">
+          <property name="title">
+           <string>PvInvMeasData</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_pvinv_81_00">
+             <property name="text">
+              <string>Inv_ActvPwrOngrid</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_00">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>W</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <spacer name="horizontalSpacer_9">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="4">
+            <widget class="QLabel" name="label_pvinv_81_01">
+             <property name="text">
+              <string>Inv_ReactvPwrOngrid</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_01">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="6">
+            <widget class="QLabel" name="label_59">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="7">
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="8">
+            <widget class="QLabel" name="label_pvinv_81_02">
+             <property name="text">
+              <string>Inv_GridVoltRms</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="9">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_02">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="10">
+            <widget class="QLabel" name="label_60">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="11">
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="12">
+            <widget class="QLabel" name="label_pvinv_81_03">
+             <property name="text">
+              <string>Inv_GridFreq</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="13">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_03">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="14">
+            <widget class="QLabel" name="label_61">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="15">
+            <spacer name="horizontalSpacer_10">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="16">
+            <widget class="QLabel" name="label_pvinv_81_04">
+             <property name="text">
+              <string>Inv_BusVolt</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="17">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_04">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="18">
+            <widget class="QLabel" name="label_62">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="19">
+            <spacer name="horizontalSpacer_17">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="20">
+            <widget class="QLabel" name="label_pvinv_81_05">
+             <property name="text">
+              <string>Inv_InvVoltRms</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="21">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_05">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="22">
+            <widget class="QLabel" name="label_63">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_pvinv_81_06">
+             <property name="text">
+              <string>Inv_InvCurrRms</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_06">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4">
+            <widget class="QLabel" name="label_pvinv_81_07">
+             <property name="text">
+              <string>Inv_GridCurrRms</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="5">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_07">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="8">
+            <widget class="QLabel" name="label_pvinv_81_08">
+             <property name="text">
+              <string>Inv_LoadCurrRms</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="9">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_08">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="12">
+            <widget class="QLabel" name="label_pvinv_81_09">
+             <property name="text">
+              <string>Inv_TemprAmb</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="13">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_09">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="16">
+            <widget class="QLabel" name="label_pvinv_81_10">
+             <property name="text">
+              <string>Inv_TemprInvMos</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="17">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_10">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="20">
+            <widget class="QLabel" name="label_pvinv_81_11">
+             <property name="text">
+              <string>Inv_TemprInvInd</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="21">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_11">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_pvinv_81_12">
+             <property name="text">
+              <string>Inv_CosPhiGrid</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_12">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="4">
+            <widget class="QLabel" name="label_pvinv_81_13">
+             <property name="text">
+              <string>Inv_CosPhiLoad</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="5">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_13">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="8">
+            <widget class="QLabel" name="label_pvinv_81_14">
+             <property name="text">
+              <string>Inv_EnergyOut</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="9">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_14">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="12">
+            <widget class="QLabel" name="label_pvinv_81_15">
+             <property name="text">
+              <string>Inv_EnergyIn</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="13">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_15">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="16">
+            <widget class="QLabel" name="label_pvinv_81_16">
+             <property name="text">
+              <string>Pv_PV1Volt</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="17">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_16">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="20">
+            <widget class="QLabel" name="label_pvinv_81_17">
+             <property name="text">
+              <string>Pv_PV2Volt</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="21">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_17">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_pvinv_81_18">
+             <property name="text">
+              <string>Pv_PV1Curr</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_18">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="4">
+            <widget class="QLabel" name="label_pvinv_81_19">
+             <property name="text">
+              <string>Pv_PV2Curr</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="5">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_19">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="8">
+            <widget class="QLabel" name="label_pvinv_81_20">
+             <property name="text">
+              <string>Pv_PV1Pwr</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="9">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_20">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="12">
+            <widget class="QLabel" name="label_pvinv_81_21">
+             <property name="text">
+              <string>Pv_PV2Pwr</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="13">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_21">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="16">
+            <widget class="QLabel" name="label_pvinv_81_22">
+             <property name="text">
+              <string>Pv_PV1Energy</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="17">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_22">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="20">
+            <widget class="QLabel" name="label_pvinv_81_23">
+             <property name="text">
+              <string>Pv_PV2Energy</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="21">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_23">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_pvinv_81_24">
+             <property name="text">
+              <string>Pv_TemprPvMos</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_24">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="4">
+            <widget class="QLabel" name="label_pvinv_81_25">
+             <property name="text">
+              <string>Pv_TemprPvInd</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="5">
+            <widget class="QLineEdit" name="lineEdit_pvinv_81_25">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_pvinv_82">
+          <property name="title">
+           <string>PvInvFaults</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_13">
+           <item row="0" column="7">
+            <widget class="QLineEdit" name="lineEdit_pvinv_82_02">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <spacer name="horizontalSpacer_11">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="6" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_pvinv_82_02">
+             <property name="text">
+              <string>Grid_GridFault</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_pvinv_82_00">
+             <property name="text">
+              <string>Inv_InvFault1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="8">
+            <spacer name="horizontalSpacer_8">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="15">
+            <spacer name="horizontalSpacer_22">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="9" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_pvinv_82_03">
+             <property name="text">
+              <string>Pv_PV1Fault</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="10">
+            <widget class="QLineEdit" name="lineEdit_pvinv_82_03">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5">
+            <spacer name="horizontalSpacer_12">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_pvinv_82_00">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="13">
+            <widget class="QLineEdit" name="lineEdit_pvinv_82_04">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QLineEdit" name="lineEdit_pvinv_82_01">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_pvinv_82_01">
+             <property name="text">
+              <string>Inv_InvFault2</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="11">
+            <spacer name="horizontalSpacer_13">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="12" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_pvinv_82_04">
+             <property name="text">
+              <string>Pv_PV2Fault</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="14">
+            <spacer name="horizontalSpacer_21">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="16">
+            <spacer name="horizontalSpacer_23">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout_16" columnstretch="1,1,1,1,0">
+          <item row="1" column="2">
+           <widget class="QGroupBox" name="groupBox_pvinv_7">
+            <property name="title">
+             <string>Pv_PV2StateCmd</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_8">
+             <item row="0" column="2">
+              <widget class="QPushButton" name="pushButton_pvinv_07_00">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>发送</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_pvinv_07_00">
+               <property name="text">
+                <string>Pv_PV2StateCmd</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_pvinv_07_00"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QGroupBox" name="groupBox_pvinv_8">
+            <property name="title">
+             <string>Pv_PvPwrLimit</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit_pvinv_08_00"/>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_pvinv_08_unit">
+               <property name="text">
+                <string>W</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QPushButton" name="pushButton_pvinv_08_00">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>发送</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0" alignment="Qt::AlignRight">
+              <widget class="QLabel" name="label_pvinv_08_00">
+               <property name="text">
+                <string>Pv_PvPwrLimit</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QGroupBox" name="groupBox_pvinv_2">
+            <property name="title">
+             <string>Inv_InvModeCmd</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_4">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_pvinv_02_00">
+               <property name="text">
+                <string>Inv_InvModeCmd</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_pvinv_02_00">
+               <item>
+                <property name="text">
+                 <string>0x0:NULL</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>0x4:并网运行</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>0x6:离网运行</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="pushButton_pvinv_02_00">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>发送</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QGroupBox" name="groupBox_pvinv_5">
+            <property name="title">
+             <string>Inv_IdGridonSetPoint</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_7">
+             <item row="0" column="3">
+              <widget class="QPushButton" name="pushButton_pvinv_05_00">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>发送</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_pvinv_05_00">
+               <property name="text">
+                <string>Inv_IdGridonSetPoint</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_43">
+               <property name="text">
+                <string>A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit_pvinv_05_00"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="groupBox_pvinv_1">
+            <property name="title">
+             <string>Inv_InvStateCmd</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_3">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_pvinv_01_00">
+               <property name="text">
+                <string>Inv_InvStateCmd</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_pvinv_01_00">
+               <item>
+                <property name="text">
+                 <string>0x0:NULL</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>0x2:停机</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>0x3:运行</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>0xE:故障恢复</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="pushButton_pvinv_01_00">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>发送</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QGroupBox" name="groupBox_pvinv_3">
+            <property name="title">
+             <string>Inv_CosPhiCtrlMode</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_5">
+             <item row="0" column="2">
+              <widget class="QPushButton" name="pushButton_pvinv_03_00">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>发送</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_pvinv_03_00">
+               <item>
+                <property name="text">
+                 <string>0x0:恒定功率因数运行</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>0x1:功率因数-有功功率曲线运行</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_pvinv_03_00">
+               <property name="text">
+                <string>Inv_CosPhiCtrlMode</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QGroupBox" name="groupBox_pvinv_6">
+            <property name="title">
+             <string>Pv_PV1StateCmd</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_9">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_pvinv_06_00">
+               <property name="text">
+                <string>Pv_PV1StateCmd</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="pushButton_pvinv_06_00">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>发送</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_pvinv_06_00"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QGroupBox" name="groupBox_pvinv_4">
+            <property name="title">
+             <string>Inv_CosPhiSetPoint</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_6">
+             <item row="0" column="0" alignment="Qt::AlignRight">
+              <widget class="QLabel" name="label_pvinv_04_00">
+               <property name="text">
+                <string>Inv_CosPhiSetPoint</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit_pvinv_04_00"/>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="pushButton_pvinv_04_00">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>发送</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="4" rowspan="2">
+           <widget class="QGroupBox" name="groupBox_pvinv_9">
+            <property name="title">
+             <string>Inv_RatedParam</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_11">
+             <item row="0" column="3">
+              <widget class="QPushButton" name="pushButton_pvinv_09_00">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>发送</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_51">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="1" column="3">
+              <widget class="QPushButton" name="pushButton_pvinv_09_01">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>发送</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLabel" name="label_54">
+               <property name="text">
+                <string>Hz</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0" alignment="Qt::AlignRight">
+              <widget class="QLabel" name="label_pvinv_09_00">
+               <property name="text">
+                <string>Inv_VoltAcRmsNom</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="lineEdit_pvinv_09_01"/>
+             </item>
+             <item row="2" column="3">
+              <widget class="QPushButton" name="pushButton_pvinv_09">
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>发送全部</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0" alignment="Qt::AlignRight">
+              <widget class="QLabel" name="label_pvinv_09_01">
+               <property name="text">
+                <string>Inv_FreqAcNom</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit_pvinv_09_00"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QGroupBox" name="groupBox_pvinv_0A">
+            <property name="title">
+             <string>Inv_NsProtectParam</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_10">
+             <item row="2" column="6">
+              <widget class="QLabel" name="label_71">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="5">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_21"/>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_02"/>
+             </item>
+             <item row="4" column="7">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_09">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="4">
+              <widget class="QLabel" name="label_pvinv_0A_23">
+               <property name="text">
+                <string>Grid_DelayRecover</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="4">
+              <widget class="QLabel" name="label_pvinv_0A_09">
+               <property name="text">
+                <string>Grid_DelayGridUvL2</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_10"/>
+             </item>
+             <item row="1" column="6">
+              <widget class="QLabel" name="label_67">
+               <property name="text">
+                <string>ms</string>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="3">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_16">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="5">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_17"/>
+             </item>
+             <item row="9" column="6">
+              <widget class="QLabel" name="label_96">
+               <property name="text">
+                <string>ms</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label_pvinv_0A_08">
+               <property name="text">
+                <string>Grid_DelayGridUvL1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="5">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_11"/>
+             </item>
+             <item row="1" column="3">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_02">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="5">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_23"/>
+             </item>
+             <item row="8" column="6">
+              <widget class="QLabel" name="label_104">
+               <property name="text">
+                <string>Hz</string>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="0">
+              <widget class="QLabel" name="label_pvinv_0A_22">
+               <property name="text">
+                <string>Grid_DelayReconn</string>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="4">
+              <widget class="QLabel" name="label_pvinv_0A_17">
+               <property name="text">
+                <string>Grid_FreqGridUfClr</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="3">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_06">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="3">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_18">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="2">
+              <widget class="QLabel" name="label_95">
+               <property name="text">
+                <string>ms</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="5">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_13"/>
+             </item>
+             <item row="8" column="1">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_16"/>
+             </item>
+             <item row="6" column="7">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_13">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="7">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_07">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="4">
+              <widget class="QLabel" name="label_pvinv_0A_11">
+               <property name="text">
+                <string>Grid_FreqGridOfL2</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="5">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_19"/>
+             </item>
+             <item row="8" column="0">
+              <widget class="QLabel" name="label_pvinv_0A_16">
+               <property name="text">
+                <string>Grid_FreqGridUfL2</string>
+               </property>
+              </widget>
+             </item>
+             <item row="12" column="3">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_24">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="label_pvinv_0A_10">
+               <property name="text">
+                <string>Grid_FreqGridOfL1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="6">
+              <widget class="QLabel" name="label_92">
+               <property name="text">
+                <string>ms</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="5">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_01"/>
+             </item>
+             <item row="11" column="7">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_23">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="7">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_21">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_04"/>
+             </item>
+             <item row="12" column="0">
+              <widget class="QLabel" name="label_pvinv_0A_24">
+               <property name="text">
+                <string>Grid_tslandDetectEn</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="3">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_10">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="2">
+              <widget class="QLabel" name="label_99">
+               <property name="text">
+                <string>Hz</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="2">
+              <widget class="QLabel" name="label_94">
+               <property name="text">
+                <string>ms</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="6">
+              <widget class="QLabel" name="label_103">
+               <property name="text">
+                <string>Hz</string>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="4">
+              <widget class="QLabel" name="label_pvinv_0A_21">
+               <property name="text">
+                <string>Grid_GradUfPwrinc</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_pvinv_0A_02">
+               <property name="text">
+                <string>Grid_VoltGridOvClr</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QLabel" name="label_69">
+               <property name="text">
+                <string>ms</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLabel" name="label_65">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="1">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_12"/>
+             </item>
+             <item row="9" column="4">
+              <widget class="QLabel" name="label_pvinv_0A_19">
+               <property name="text">
+                <string>Grid_DelayGridUfL2</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="2">
+              <widget class="QLabel" name="label_101">
+               <property name="text">
+                <string>Hz</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="3">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_12">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_08"/>
+             </item>
+             <item row="7" column="1">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_14"/>
+             </item>
+             <item row="0" column="6">
+              <widget class="QLabel" name="label_58">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="7">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_17">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="3">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_08">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="1">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_18"/>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_56">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="6">
+              <widget class="QLabel" name="label_100">
+               <property name="text">
+                <string>Hz</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="2">
+              <widget class="QLabel" name="label_73">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="7">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_01">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="6">
+              <widget class="QLabel" name="label_98">
+               <property name="text">
+                <string>s</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLabel" name="label_pvinv_0A_12">
+               <property name="text">
+                <string>Grid_FreqGridOfClr</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="7">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_03">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="3">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_22">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_00"/>
+             </item>
+             <item row="2" column="4">
+              <widget class="QLabel" name="label_pvinv_0A_05">
+               <property name="text">
+                <string>Grid_GridVoltUvL1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_pvinv_0A_04">
+               <property name="text">
+                <string>Grid_DelayGridOvL2</string>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="2">
+              <widget class="QLabel" name="label_97">
+               <property name="text">
+                <string>s</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="4">
+              <widget class="QLabel" name="label_pvinv_0A_07">
+               <property name="text">
+                <string>Grid_GridVoltUvClr</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="4">
+              <widget class="QLabel" name="label_pvinv_0A_15">
+               <property name="text">
+                <string>Grid_FreqGridUfL1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="2">
+              <widget class="QLabel" name="label_102">
+               <property name="text">
+                <string>Hz</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_06"/>
+             </item>
+             <item row="1" column="5">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_03"/>
+             </item>
+             <item row="1" column="4">
+              <widget class="QLabel" name="label_pvinv_0A_03">
+               <property name="text">
+                <string>Grid_DelayGridOvL1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="5">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_07">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="5">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_15"/>
+             </item>
+             <item row="2" column="5">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_05"/>
+             </item>
+             <item row="7" column="7">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_15">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="3">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_04">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="0">
+              <widget class="QLabel" name="label_pvinv_0A_20">
+               <property name="text">
+                <string>Grid_GradOfPwrRed</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="7">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_11">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="0">
+              <widget class="QLabel" name="label_pvinv_0A_18">
+               <property name="text">
+                <string>Grid_DelayGridUfL1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="6">
+              <widget class="QLabel" name="label_93">
+               <property name="text">
+                <string>ms</string>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="1">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_22"/>
+             </item>
+             <item row="4" column="5">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_09"/>
+             </item>
+             <item row="10" column="1">
+              <widget class="QLineEdit" name="lineEdit_pvinv_0A_20"/>
+             </item>
+             <item row="4" column="2">
+              <widget class="QLabel" name="label_91">
+               <property name="text">
+                <string>ms</string>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="3">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_20">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_00">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="7">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_19">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="4">
+              <widget class="QLabel" name="label_pvinv_0A_01">
+               <property name="text">
+                <string>Grid_VoltGridOvL2</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="0">
+              <widget class="QLabel" name="label_pvinv_0A_14">
+               <property name="text">
+                <string>Grid_DelayGridOfL2</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="7">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_05">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="13" column="0" colspan="8">
+              <layout class="QHBoxLayout" name="horizontalLayout_5">
+               <item>
+                <spacer name="horizontalSpacer_19">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_pvinv_0A_clearAll">
+                 <property name="maximumSize">
+                  <size>
+                   <width>60</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>清除全部</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_pvinv_0A_setAll">
+                 <property name="maximumSize">
+                  <size>
+                   <width>60</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>设置全部</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="6" column="4">
+              <widget class="QLabel" name="label_pvinv_0A_13">
+               <property name="text">
+                <string>Grid_DelayGridOfL1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="6">
+              <widget class="QLabel" name="label_74">
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label_pvinv_0A_06">
+               <property name="text">
+                <string>Grid_GridVoltUvL2</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_pvinv_0A_00">
+               <property name="text">
+                <string>Grid_VoltGridOvL1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="3">
+              <widget class="QPushButton" name="pushButton_pvinv_0A_14">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="12" column="1">
+              <widget class="QComboBox" name="comboBox_pvinv_0A_24">
+               <item>
+                <property name="text">
+                 <string>禁用</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>开启</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_pvinv_0B">
+            <property name="title">
+             <string>Inv_HvrtParam</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <layout class="QGridLayout" name="gridLayout_14">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_pvinv_0B_00">
+                 <property name="text">
+                  <string>Grid_HvrtEnable</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <spacer name="horizontalSpacer_16">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_pvinv_0B_01">
+                 <property name="text">
+                  <string>Grid_HvrtCurvLen</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="lineEdit_pvinv_0B_01"/>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="comboBox_pvinv_0B_00">
+                 <item>
+                  <property name="text">
+                   <string>禁用</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>开启</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QTableWidget" name="tableWidget_pvinv_0B">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QTabBar::tab{width:200}</string>
+               </property>
+               <attribute name="horizontalHeaderCascadingSectionResizes">
+                <bool>false</bool>
+               </attribute>
+               <attribute name="horizontalHeaderDefaultSectionSize">
+                <number>120</number>
+               </attribute>
+               <row>
+                <property name="text">
+                 <string>1</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>2</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>3</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>4</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>5</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>6</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>7</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>8</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>9</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>10</string>
+                </property>
+               </row>
+               <column>
+                <property name="text">
+                 <string>Grid_HvrtCurvVolt_Bp</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Grid_HvrtCurvDelay_Tbl</string>
+                </property>
+               </column>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <spacer name="horizontalSpacer_14">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_pvinv_0B_clear">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>清除</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_pvinv_0B_set">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>设置</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_pvinv_0C">
+            <property name="title">
+             <string>Inv_LvrtParam</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <layout class="QGridLayout" name="gridLayout_15">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_pvinv_0C_00">
+                 <property name="text">
+                  <string>Grid_LvrtEnable</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <spacer name="horizontalSpacer_20">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_pvinv_0C_01">
+                 <property name="text">
+                  <string>Grid_LvrtCurvLen</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="comboBox_pvinv_0C_00">
+                 <item>
+                  <property name="text">
+                   <string>禁用</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>开启</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="lineEdit_pvinv_0C_01"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QTableWidget" name="tableWidget_pvinv_0C">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="autoFillBackground">
+                <bool>false</bool>
+               </property>
+               <attribute name="horizontalHeaderDefaultSectionSize">
+                <number>120</number>
+               </attribute>
+               <row>
+                <property name="text">
+                 <string>1</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>2</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>3</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>4</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>5</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>6</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>7</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>8</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>9</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>10</string>
+                </property>
+               </row>
+               <column>
+                <property name="text">
+                 <string>Grid_LvrtCurvVolt_Bp</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Grid_LvrtCurvDelay_Tbl</string>
+                </property>
+               </column>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
+                <spacer name="horizontalSpacer_18">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_pvinv_0C_clear">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>清除</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_pvinv_0C_set">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>设置</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Charger</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QGroupBox" name="groupBox_charger_80">
+          <property name="title">
+           <string>ChgStatus</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_charger_80_00">
+             <property name="text">
+              <string>Chg_ChgState</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_charger_80_00">
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_charger_80_01">
+             <property name="text">
+              <string>Chg_ChgMode</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_charger_80_01">
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_24">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_charger_81">
+          <property name="title">
+           <string>ChgMeasData</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_22">
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_charger_81_06">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="19">
+            <spacer name="horizontalSpacer_26">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="0" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_9">
+             <property name="text">
+              <string>Chg_BusVolt</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="10">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>A</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5">
+            <widget class="QLineEdit" name="lineEdit_charger_81_01">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="9">
+            <widget class="QLineEdit" name="lineEdit_charger_81_02">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="8" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_18">
+             <property name="text">
+              <string>Chg_TemprHvMos</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="5">
+            <widget class="QLineEdit" name="lineEdit_charger_81_07">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="14">
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>A</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="16">
+            <widget class="QLabel" name="label_14">
+             <property name="text">
+              <string>Chg_BusPower</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="9">
+            <widget class="QLineEdit" name="lineEdit_charger_81_08">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_10">
+             <property name="text">
+              <string>Chg_BatVolt</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_16">
+             <property name="text">
+              <string>Chg_ChgEnergy</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="17">
+            <widget class="QLineEdit" name="lineEdit_charger_81_04">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="12" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_12">
+             <property name="text">
+              <string>Chg_BatCurr</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_17">
+             <property name="text">
+              <string>Chg_DChgEnergy</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="15">
+            <spacer name="horizontalSpacer_27">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="7">
+            <spacer name="horizontalSpacer_29">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="21">
+            <widget class="QLineEdit" name="lineEdit_charger_81_05">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>V</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="8" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>Chg_BusCurr</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="22">
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>W</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="18">
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>W</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="12" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_19">
+             <property name="text">
+              <string>Chg_TemprLvMos</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="13">
+            <widget class="QLineEdit" name="lineEdit_charger_81_03">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="13">
+            <widget class="QLineEdit" name="lineEdit_charger_81_09">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="6">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>V</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="20">
+            <widget class="QLabel" name="label_15">
+             <property name="text">
+              <string>Chg_BatPower</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_charger_81_00">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="11">
+            <spacer name="horizontalSpacer_28">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="3">
+            <spacer name="horizontalSpacer_30">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string>kWh</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="6">
+            <widget class="QLabel" name="label_22">
+             <property name="text">
+              <string>kWh</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="10">
+            <widget class="QLabel" name="label_23">
+             <property name="text">
+              <string>℃</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="14">
+            <widget class="QLabel" name="label_24">
+             <property name="text">
+              <string>℃</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_charger_82">
+          <property name="title">
+           <string>ChgFaults</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_charger_82_00">
+             <property name="text">
+              <string>Chg_Fault</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_charger_82_00">
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_25">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QGroupBox" name="groupBox_charger_1">
+            <property name="title">
+             <string>Chg_ChgStateCmd</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_17">
+             <item row="0" column="0" alignment="Qt::AlignRight">
+              <widget class="QLabel" name="label_charger_01_00">
+               <property name="text">
+                <string>Chg_ChgStateCmd</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_charger_01_00">
+               <item>
+                <property name="text">
+                 <string>0x0:NULL</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>0x2:停机</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>0x3:运行</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>0xA:开环调试</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>0xE:故障恢复</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="pushButton_charger_01_00">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>发送</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_charger_2">
+            <property name="title">
+             <string>Chg_ChgModeCmd</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_21">
+             <item row="0" column="0" alignment="Qt::AlignRight">
+              <widget class="QLabel" name="label_charger_02_00">
+               <property name="text">
+                <string>Chg_ChgModeCmd</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_charger_02_00">
+               <item>
+                <property name="text">
+                 <string>0x0:NULL</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>0x4:母线FBC软起</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>0x5:母线电压控制</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>0x6:电池电流控制</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="pushButton_charger_02_00">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>发送</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_charger_3">
+            <property name="title">
+             <string>Chg_MaxChgCurr</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_20">
+             <item row="0" column="3">
+              <widget class="QPushButton" name="pushButton_charger_03_00">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>发送</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit_charger_03_00"/>
+             </item>
+             <item row="0" column="0" alignment="Qt::AlignRight">
+              <widget class="QLabel" name="label_charger_03_00">
+               <property name="text">
+                <string>Chg_MaxChgCurr</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_20">
+               <property name="text">
+                <string>A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_charger_4">
+            <property name="title">
+             <string>Chg_MaxDChgCurr</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_19">
+             <item row="0" column="0" alignment="Qt::AlignRight">
+              <widget class="QLabel" name="label_charger_04_00">
+               <property name="text">
+                <string>Chg_MaxDChgCurr</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QPushButton" name="pushButton_charger_04_00">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>发送</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit_charger_04_00"/>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_21">
+               <property name="text">
+                <string>A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_charger_5">
+            <property name="title">
+             <string>Chg_PowerSetPoint</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_18">
+             <item row="0" column="3">
+              <widget class="QPushButton" name="pushButton_charger_05_00">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>发送</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit_charger_05_00"/>
+             </item>
+             <item row="0" column="0" alignment="Qt::AlignRight">
+              <widget class="QLabel" name="label_charger_05_00">
+               <property name="text">
+                <string>Chg_PowerSetPoint</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_charger_05_00_unit">
+               <property name="text">
+                <string>W</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1166</width>
+     <height>17</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
