@@ -100,7 +100,7 @@
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_Chg">
        <attribute name="title">
@@ -328,7 +328,7 @@
            <item row="0" column="6">
             <widget class="QLabel" name="label_59">
              <property name="text">
-              <string/>
+              <string>W</string>
              </property>
             </widget>
            </item>
@@ -362,7 +362,7 @@
            <item row="0" column="10">
             <widget class="QLabel" name="label_60">
              <property name="text">
-              <string/>
+              <string>V</string>
              </property>
             </widget>
            </item>
@@ -396,7 +396,7 @@
            <item row="0" column="14">
             <widget class="QLabel" name="label_61">
              <property name="text">
-              <string/>
+              <string>Hz</string>
              </property>
             </widget>
            </item>
@@ -430,7 +430,7 @@
            <item row="0" column="18">
             <widget class="QLabel" name="label_62">
              <property name="text">
-              <string/>
+              <string>V</string>
              </property>
             </widget>
            </item>
@@ -464,7 +464,7 @@
            <item row="0" column="22">
             <widget class="QLabel" name="label_63">
              <property name="text">
-              <string/>
+              <string>V</string>
              </property>
             </widget>
            </item>
@@ -745,6 +745,132 @@
             <widget class="QLineEdit" name="lineEdit_pvinv_81_25">
              <property name="readOnly">
               <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string>A</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="6">
+            <widget class="QLabel" name="label_25">
+             <property name="text">
+              <string>A</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="10">
+            <widget class="QLabel" name="label_26">
+             <property name="text">
+              <string>A</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="14">
+            <widget class="QLabel" name="label_27">
+             <property name="text">
+              <string>℃</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="18">
+            <widget class="QLabel" name="label_28">
+             <property name="text">
+              <string>℃</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="22">
+            <widget class="QLabel" name="label_29">
+             <property name="text">
+              <string>℃</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="10">
+            <widget class="QLabel" name="label_30">
+             <property name="text">
+              <string>kWh</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="14">
+            <widget class="QLabel" name="label_31">
+             <property name="text">
+              <string>kWh</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="18">
+            <widget class="QLabel" name="label_32">
+             <property name="text">
+              <string>V</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="22">
+            <widget class="QLabel" name="label_33">
+             <property name="text">
+              <string>V</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QLabel" name="label_34">
+             <property name="text">
+              <string>A</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="6">
+            <widget class="QLabel" name="label_35">
+             <property name="text">
+              <string>A</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="10">
+            <widget class="QLabel" name="label_36">
+             <property name="text">
+              <string>W</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="14">
+            <widget class="QLabel" name="label_37">
+             <property name="text">
+              <string>W</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="18">
+            <widget class="QLabel" name="label_38">
+             <property name="text">
+              <string>kWh</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="22">
+            <widget class="QLabel" name="label_39">
+             <property name="text">
+              <string>kWh</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2">
+            <widget class="QLabel" name="label_40">
+             <property name="text">
+              <string>℃</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="6">
+            <widget class="QLabel" name="label_41">
+             <property name="text">
+              <string>℃</string>
              </property>
             </widget>
            </item>
@@ -1655,7 +1781,7 @@
              <item row="12" column="0">
               <widget class="QLabel" name="label_pvinv_0A_24">
                <property name="text">
-                <string>Grid_tslandDetectEn</string>
+                <string>Grid_IslandDetectEn</string>
                </property>
               </widget>
              </item>
@@ -2934,12 +3060,45 @@
            <item alignment="Qt::AlignRight">
             <widget class="QLabel" name="label_charger_82_00">
              <property name="text">
-              <string>Chg_Fault</string>
+              <string>Chg_ChgFault1</string>
              </property>
             </widget>
            </item>
            <item>
             <widget class="QLineEdit" name="lineEdit_charger_82_00">
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_31">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_charger_82_01">
+             <property name="text">
+              <string>Chg_ChgFault2</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_charger_82_01">
              <property name="maximumSize">
               <size>
                <width>100</width>
