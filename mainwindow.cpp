@@ -44,11 +44,6 @@ void MainWindow::on_pushButton_connect_clicked()
         }
     } else {
         tcpSocket->disconnectFromHost();
-        if (tcpSocket->waitForDisconnected(1000)) {
-            qDebug() << "disconnect ok";
-        } else {
-            qDebug() << "disconnect failed";
-        }
     }
     ui->pushButton_connect->setEnabled(true);
 }
